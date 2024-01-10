@@ -1,0 +1,110 @@
+iframe {
+	border: 0;
+}
+
+figcaption,
+figure,
+main {
+	display: block;
+	margin: 0;
+}
+
+main {
+	overflow: hidden;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+strong {
+	font-weight: $font-weight-bold;
+}
+
+button:focus {
+	outline: 0;
+}
+
+label {
+	font-weight: $font-weight-bold;
+}
+
+.sidebar__logo {
+	display: flex;
+	align-items: flex-end;
+	gap: 8px;
+	padding: 0.75rem 0.75rem 0.55rem;
+	cursor: default;
+	img {
+		width: 26px;
+	}
+	p {
+		margin: 0;
+		line-height: 1rem;
+		font-size: 1.15rem;
+		font-weight: 600;
+	}
+}
+
+td {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 200px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	margin: 0;
+}
+
+// react-select styles
+.css-1pndypt-Input {
+	padding: 0.25rem 0 !important;
+	color: #66799e;
+	padding: 0.25rem 0;
+	max-width: 95%;
+	overflow: hidden !important;
+}
+
+.css-1pahdxg-control {
+	input {
+		color: #66799e !important;
+	}
+}
+
+.css-14el2xx-placeholder {
+	color: #66799e !important;
+}
+
+.css-1s2u09g-control {
+	cursor: text !important;
+}
+
+// hide arrow input number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.loading-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
+	background-color: rgba(#000000, 0.1);
+}

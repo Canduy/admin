@@ -1,0 +1,21 @@
+.book-thumbnail {
+	img {
+		width: 35px;
+		height: 50px;
+		min-width: 35px;
+		min-height: 50px;
+		object-fit: cover;
+	}
+}
+
+.modal-approve-book-info__book-thumbnail {
+	.book-thumbnail {
+		display: flex;
+		justify-content: center;
+		img {
+			width: 163px;
+			height: 230px;
+			object-fit: cover;
+		}
+	}
+}

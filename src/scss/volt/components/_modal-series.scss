@@ -1,0 +1,139 @@
+.modal-series {
+	.modal-dialog {
+		width: 60%;
+		max-width: 650px;
+	}
+	.modal-content {
+		border-radius: 10px;
+	}
+	.modal-header {
+		border-bottom: none;
+		padding: 24px 24px 16px;
+	}
+	.modal-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: stretch;
+		padding: 0px 24px 24px;
+	}
+
+	&__body {
+		padding: 20px 16px;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		margin-bottom: 8px;
+
+		&__options {
+			max-height: 220px;
+			overflow-x: hidden;
+			overflow-y: auto;
+			&::-webkit-scrollbar {
+				width: 8px;
+			}
+
+			/* Track */
+			&::-webkit-scrollbar-track {
+				background: #f1f1f1;
+				border-radius: 8px;
+			}
+
+			/* Handle */
+			&::-webkit-scrollbar-thumb {
+				background: rgba(#606060, 0.3);
+				border-radius: 8px;
+				&:hover {
+					background: rgba(#606060, 0.2);
+				}
+			}
+			.row-options {
+				display: flex;
+				flex-direction: row;
+				margin: 2px;
+				border: 1px solid white;
+				border-radius: 12px;
+				&:hover {
+					cursor: pointer;
+					background-color: #f6f6f5;
+				}
+				.modal-series-options-title {
+					min-height: 48px;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 24px;
+					display: flex;
+					align-items: center;
+					padding-left: 40px;
+				}
+				.modal-series-options-checkbox {
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+				}
+			}
+		}
+
+		&__button {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: 16px;
+			gap: 15px;
+			text-align: left;
+			border: 1px solid #d9dbe9;
+			border-radius: 12px;
+			height: 48px;
+			cursor: pointer;
+			span {
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+
+		.form-control {
+			height: 48px;
+		}
+	}
+}
+
+/* Customize the label (the container) */
+.modal-series-options-container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 24px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.modal-series-options-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom radio button */
+.modal-series-options-checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	border: 2px solid #a0a3bd;
+	border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.modal-series-options-container input:checked ~ .modal-series-options-checkmark {
+	border: none;
+	background-color: $primary;
+}

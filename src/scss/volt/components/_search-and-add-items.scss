@@ -1,0 +1,126 @@
+.search-and-add-items {
+	width: 100%;
+}
+
+.search-and-add-items__main-content {
+	padding: 16px 24px;
+	border-radius: 12px;
+	background-color: #f7f7fc;
+	display: flex;
+	align-items: center;
+	svg {
+		width: 18px;
+		height: 18px;
+	}
+
+	.search-and-add-items__search-icon {
+		margin-right: 16px;
+	}
+
+	> input {
+		width: 95%;
+		background-color: unset;
+		outline: none;
+		font-size: 14px;
+		&::placeholder {
+			color: #a0a3bd;
+		}
+	}
+	&.added-items {
+		padding: 8px 24px;
+	}
+}
+
+.search-and-add-items__items-added {
+	width: 100%;
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.search-and-add-items__items-added__item {
+	padding: 12px;
+	color: #b38c64;
+	background-color: #f5e7d8;
+	border-radius: 12px;
+	font-weight: 600;
+	font-size: 13px;
+	width: fit-content;
+	max-width: 95%;
+	line-height: 19px;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	button {
+		display: flex;
+		align-items: center;
+		svg {
+			path {
+				stroke: #b38c64;
+				stroke-width: 3px;
+			}
+		}
+	}
+}
+
+.search-and-add-items__input-wrapper {
+	padding: 12px 0;
+	height: 100%;
+}
+
+.search-and-add-items__input {
+	width: 100%;
+	outline: none;
+	font-size: 13px;
+	line-height: 19px;
+	background-color: transparent;
+	&.hidden {
+		display: none;
+	}
+}
+
+.search-and-add-items__search-result {
+	display: flex;
+	margin-top: 24px;
+	margin-top: 8px;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.search-and-add-items__searched-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	padding: 16px;
+	color: $primary;
+	border: $primary 2px solid;
+	border-radius: 8px;
+	margin: 16px 16px 0 0;
+	position: relative;
+	font-size: 14px;
+	svg {
+		width: 8px;
+		height: 8px;
+		position: absolute;
+		top: 2px;
+		right: 4px;
+		path {
+			stroke: white;
+		}
+	}
+}
+
+.search-and-add-items__checked-item {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-top: 20px $primary solid;
+	border-left: 26px transparent solid;
+}
+
+.search-and-add-items__no-search-result {
+	margin-top: 24px;
+	color: #2d2c42;
+	font-size: 15px;
+}

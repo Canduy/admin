@@ -1,0 +1,16 @@
+.custom-dropdown {
+	cursor: pointer;
+	width: fit-content;
+	.dropdown-menu {
+		min-width: auto;
+		a {
+			font-size: 13px;
+			font-weight: 600;
+			text-transform: none;
+			&.is-being-choosen {
+				font-size: 14px;
+				font-weight: 750;
+			}
+		}
+	}
+}
